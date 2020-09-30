@@ -31,5 +31,7 @@ Return:
 ]
 """
 def lambda_school(n):
-    # Your code here
+    return [str(i) if i % 3 and i % 5 else "LambdaSchool" if not i % 15 else "School" if not i % 5 else "Lambda" for i in range(1, n + 1) ]
 
+n = 15
+print(lambda_school(n))

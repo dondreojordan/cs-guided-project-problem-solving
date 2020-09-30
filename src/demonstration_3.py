@@ -13,5 +13,14 @@ string = "abcabc"
 return -1.
 """
 def first_unique_char(string):
-    # Your code here
+    
+    for idx, val in enumerate(string):
+        if string.count(val) == 1:
+            return print(f'Located at index {idx}')
 
+    return print(f'Located at index {-1}')
+
+# string = "abcabc"
+# string = "dondreojordan"
+string = "lambdaschool"
+print(first_unique_char(string))
